@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* -------------------------------------------------------- */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: rgb(1, 0, 59);
+    padding: 16px;
+    min-width: 200px;
+}
+
+.header .logo {
+    padding: 0 100px;
+
+}
+
+.header .logo a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header .links {
+    padding: 0 150px;
+}
+
+.header .links ul {
+    display: flex;
+    gap: 16px;
+}
+
+.header .links ul li {
+    color: white;
+    list-style: none;
+}
+
+.header .links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* -------------------------------------------------------- */
+
+.presentation {
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    color: white;
+    background-color: rgb(1, 0, 59);
+}
+
+.presentation .container {
+    min-width: 600px;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.presentation .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch; 
+}
+
+.container .textbox .title {
+    font-size: 40px;
+    font-weight: 900;   
+}
+
+.container .textbox .p {
+    color: rgba(255, 255, 255, 0.767);
+}
+
+.container .textbox button[id=sign-up] {
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: rgb(58, 142, 252);
+    border: 0;
+    cursor: pointer;
+}
+
+.container .textbox button[id=sign-up]:hover {
+    background-color: rgb(86, 154, 243);
+}
+
+.container .textbox button[id=sign-up]:active {
+    background-color: rgb(58, 142, 252);
+}
+
+.container .textbox .title, .container .textbox .p {
+    margin-bottom: 30px;
+}
+
+.presentation .textbox, .presentation .image{
+    padding: 70px 25px;
+    min-height: 434px;
+    min-width: 550px;
+    width: 550px;
+}
+
+/* -------------------------------------------------------- */
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.info-box .title {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin: 32px;
+}
+
+.info-box .item-box {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 32px;
+}
+
+.item-box .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 210px;
+}
+
+.item-box .item .box {
+    border: 3px solid rgb(3, 130, 248);
+    border-radius: 10px;
+    width: 180px;
+    height: 180px;
+}
+
+.item-box .item .text {
+    text-align: center;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.info-box {
+    margin-bottom: 100px;
+}
+
+/* -------------------------------------------------------- */
+
+.quote-box {
+    display: flex;
+    justify-content: center;
+    background-color: #99f7d950;
+}
+
+.quote {
+    margin: 100px 200px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.quote .text {
+    font-size: 30px;
+    font-style: italic;
+    width: 680px;
+}
+
+.quote .signature {
+    font-weight: 800;
+    font-size: 18px;
+    align-self: self-end;
+}
+
+/* -------------------------------------------------------- */
+
+.banner-box {
+    margin: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-box .sign-up_banner {
+    justify-content: space-between;
+    background-color: rgb(34, 148, 255);
+    width: 1000px;
+    max-width: 1000px;
+    color: white;
+    display: flex;
+    margin: 50px 100px;
+    flex-grow: 1;
+    border-radius: 10px;
+}
+
+.banner-box .sign-up_banner .textbox {
+    flex-grow: 1;
+    min-width: 650px;
+}
+
+.banner-box .sign-up_banner .textbox .title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.banner-box .sign-up_banner .textbox .text {
+    font-weight: lighter;
+}
+
+.banner-box .sign-up_banner .textbox, .button {
+    padding: 32px 100px;
+}
+
+.banner-box .sign-up_banner button[id=sign-up] {
+    background-color: rgb(58, 142, 252);
+    border: 2px solid white;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.banner-box .sign-up_banner button[id=sign-up]:hover {
+    background-color: rgb(86, 154, 243);
+}
+
+.banner-box .sign-up_banner button[id=sign-up]:active {
+    background-color: rgb(58, 142, 252);
+}
+
+/* -------------------------------------------------------- */
+
+.footer {
+    background-color: rgb(1, 0, 59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 30px 0;
+}
