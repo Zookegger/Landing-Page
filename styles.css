@@ -22,8 +22,8 @@ body {
 }
 
 .header .logo {
-    padding: 0 100px;
-
+    padding-left: 100px;
+    padding-right: 16px;
 }
 
 .header .logo a{
@@ -34,7 +34,7 @@ body {
 }
 
 .header .links {
-    padding: 0 150px;
+    padding-right: 150px;
 }
 
 .header .links ul {
@@ -60,6 +60,7 @@ body {
     justify-content: center;
     color: white;
     background-color: rgb(1, 0, 59);
+    padding: 70px 50px;
 }
 
 .presentation .container {
@@ -78,7 +79,6 @@ body {
 .container .textbox {
     display: flex;
     flex-direction: column;
-    justify-content: stretch; 
 }
 
 .container .textbox .title {
@@ -115,8 +115,7 @@ body {
 }
 
 .presentation .textbox, .presentation .image{
-    padding: 70px 25px;
-    min-height: 434px;
+    height: 300px;
     min-width: 550px;
     width: 550px;
 }
@@ -142,6 +141,7 @@ body {
 .info-box .item-box {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 32px;
 }
 
@@ -213,7 +213,6 @@ body {
     justify-content: space-between;
     background-color: rgb(34, 148, 255);
     width: 1000px;
-    max-width: 1000px;
     color: white;
     display: flex;
     margin: 50px 100px;
