@@ -213,16 +213,19 @@ body {
     justify-content: space-between;
     background-color: rgb(34, 148, 255);
     width: 1000px;
+    max-width: 1000px;
     color: white;
     display: flex;
     margin: 50px 100px;
     flex-grow: 1;
     border-radius: 10px;
+    gap: 16px;
 }
 
 .banner-box .sign-up_banner .textbox {
     flex-grow: 1;
-    min-width: 650px;
+    max-width: 650px;
+    min-width: 560px;
 }
 
 .banner-box .sign-up_banner .textbox .title {
@@ -234,8 +237,13 @@ body {
     font-weight: lighter;
 }
 
-.banner-box .sign-up_banner .textbox, .button {
-    padding: 32px 100px;
+.banner-box .sign-up_banner .textbox{
+    padding: 32px 16px;
+    padding-left: 100px;
+}
+ .button {
+    padding: 32px 16px;
+    padding-right: 100px;
 }
 
 .banner-box .sign-up_banner button[id=sign-up] {
